@@ -1,0 +1,159 @@
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Calligraffitti', cursive;
+}
+
+/* Body */
+body {
+    background: #fff7e9; /* soft light orange background */
+    color: #4b1d1d;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+    background: #ff8c00; /* dark orange */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+nav h2 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Container */
+.container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Card Style */
+.card {
+    background: #ffe6c7; /* warm light orange card */
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #e65100; /* deep orange heading */
+}
+
+/* Form Inputs */
+form input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #ffcc80; /* soft orange border */
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    border-color: #ff8c00;
+    box-shadow: 0 0 8px rgba(255,140,0,0.4);
+    outline: none;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #ff9800, #fb8c00); /* orange gradient */
+    border: none;
+    color: white;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Messages List */
+#msgList {
+    list-style: none;
+    padding-left: 0;
+}
+
+#msgList li {
+    background: #fff0db; /* lighter orange bubble */
+    padding: 12px 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+#msgList li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    .container {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timetable</title>
+    <!-- Google Font for handwriting -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="timetable.css">
+</head>
+<body>
+
+<nav>
+    <h2>Timetable</h2>
+    <ul>
+        <li><a href="admin.html">Back</a></li>
+    </ul>
+</nav>
+
+<section class="container">
+
+    <div class="card">
+        <h3>Set Timetable</h3>
+        <form id="timeForm">
+            <input type="text" id="sub" placeholder="Subject" required>
+            <input type="text" id="time" placeholder="Time" required>
+            <button type="submit">Add</button>
+        </form>
+
+        <h3>Timetable Entries</h3>
+        <ul id="timeList"></ul>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

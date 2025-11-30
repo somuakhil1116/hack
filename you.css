@@ -1,0 +1,136 @@
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ruby', 'Dancing Script', cursive;
+}
+
+/* Body – under the sea gradient */
+body {
+    background: linear-gradient(
+        to bottom,
+        #6CF4F6,  /* electric shallow water */
+        #3DA7BF,  /* moonstone mid-water */
+        #1A5C7F   /* deep blue sapphire */
+    );
+    min-height: 100vh;
+    color: #f9fafb;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(13, 39, 64, 0.9); /* deep ocean overlay */
+    color: #E0F7FA;                    /* pale aqua text */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+}
+
+nav h2 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #E0F7FA;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: rgba(61, 167, 191, 0.18); /* subtle teal chip */
+}
+
+nav a:hover {
+    background-color: #3DA7BF;
+    color: #02212F;
+}
+
+/* Container */
+.container {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Style */
+.card {
+    background: rgba(2, 33, 47, 0.85); /* translucent deep sea panel */
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(108, 244, 246, 0.45); /* glowing border */
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.65);
+}
+
+.card h2 {
+    font-size: 2rem;
+    color: #6CF4F6; /* bright aqua heading */
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #E5FBFF;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #1A5C7F, #3DA7BF); /* deep-to-mid water */
+    color: #E0F7FA;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #02212F, #1A5C7F);
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .card h2 {
+        font-size: 1.8rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,127 @@
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rock Salt', cursive;
+}
+
+body {
+    background: linear-gradient(to right, #fff9c4, #2196f3); /* yellow to blue gradient */
+    min-height: 100vh;
+    color: #1b1b1b;
+}
+
+/* Navigation Bar */
+nav {
+    background: #ffeb3b; /* bright yellow */
+    color: #0d47a1; /* dark blue */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+nav h2 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #0d47a1;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #0d47a1;
+    color: #fff9c4;
+}
+
+/* Container */
+.container {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Style */
+.card {
+    background: #ffffffcc; /* translucent white */
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+    font-size: 2rem;
+    color: #0d47a1; /* dark blue headings */
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Buttons (optional future use) */
+button {
+    padding: 12px 25px;
+    background: #0d47a1; /* blue */
+    color: #ffeb3b; /* yellow text */
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #1565c0;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .card h2 {
+        font-size: 1.8rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+}

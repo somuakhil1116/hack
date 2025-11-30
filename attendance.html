@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance</title>
+    <link rel="stylesheet" href="daily.css">
+</head>
+<body>
+
+<nav>
+    <h2>Attendance</h2>
+    <ul>
+        <li><a href="teacher.html">Back</a></li>
+    </ul>
+</nav>
+
+<section class="container">
+    <div class="card">
+        <h3>Mark Attendance</h3>
+        <button class="btn" onclick="markAttendance()">Mark Present For All</button>
+        <p id="attMsg" class="message"></p>
+    </div>
+
+    <div class="card">
+        <h3>Attendance Records</h3>
+        <ul id="attendanceList" class="attendance-list"></ul>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

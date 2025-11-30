@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Messaging</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="message.css">
+</head>
+<body>
+
+<nav>
+    <h2>Messaging</h2>
+    <ul>
+        <li><a href="admin.html">Back</a></li>
+    </ul>
+</nav>
+
+<section class="container">
+
+    <div class="card">
+        <h3>Send a Message</h3>
+        <form id="msgForm">
+            <input type="text" id="msgSender" placeholder="Sender" required>
+            <input type="text" id="msgText" placeholder="Message" required>
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h3>Messages</h3>
+        <ul id="msgList"></ul>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

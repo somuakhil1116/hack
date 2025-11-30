@@ -1,0 +1,166 @@
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Olivia', 'Dancing Script', cursive; /* handwriting font */
+}
+
+/* Body – light yellow + emerald vibe */
+body {
+    background: linear-gradient(to right, #FFFACD, #FFF5E1); /* soft light yellow range */
+    min-height: 100vh;
+    color: #2F3A2F; /* soft deep olive/emerald-neutral for text */
+}
+
+/* Navigation Bar */
+nav {
+    background: #50C878; /* emerald green */
+    color: #FFF8DC;      /* pale creamy yellow */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.18);
+}
+
+nav h2 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #FFFDE7; /* very light yellow for links */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 250, 205, 0.18); /* light yellow overlay */
+    border: 1px solid rgba(255, 253, 231, 0.4);
+}
+
+nav a:hover {
+    background-color: #FFFACD;  /* light yellow */
+    color: #1E5C3A;             /* deeper emerald text */
+}
+
+/* Container & Card */
+.container {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: #FFFDF4CC; /* very light yellow-cream */
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(80, 200, 120, 0.35); /* subtle emerald border */
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    font-size: 2rem;
+    color: #1E5C3A; /* deeper emerald heading */
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 15px;
+    width: 80%;
+    border: 2px solid #FFFACD; /* light yellow border */
+    border-radius: 10px;
+    font-family: 'Olivia', 'Dancing Script', cursive;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #FFFFF5;
+    color: #2F3A2F;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #50C878; /* emerald focus */
+    box-shadow: 0 0 6px rgba(80, 200, 120, 0.5);
+}
+
+/* Button */
+form button {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #50C878, #7AD99B); /* emerald to soft mint */
+    color: #FFFDE7;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #1E5C3A, #50C878);
+    transform: translateY(-2px);
+}
+
+/* Timetable Entries */
+ul#timeList {
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+ul#timeList li {
+    background: #FFF9D6; /* pale yellow chip */
+    color: #2F5E3A;      /* emerald-tinted text */
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border: 1px solid rgba(80, 200, 120, 0.3); /* emerald outline */
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .card h3 {
+        font-size: 1.8rem;
+    }
+
+    form input {
+        width: 90%;
+    }
+}

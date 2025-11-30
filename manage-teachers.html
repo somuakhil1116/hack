@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Teachers</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Baloo+2:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+
+<nav>
+    <h2>Manage Teachers</h2>
+    <ul>
+        <li><a href="admin.html">Back</a></li>
+    </ul>
+</nav>
+
+<section class="container">
+
+    <div class="card">
+        <h3>Add Teacher</h3>
+        <form id="addTeacherForm">
+            <input type="text" id="teachName" placeholder="Name" required>
+            <input type="text" id="teachSubject" placeholder="Subject" required>
+            <button class="btn" type="submit">Add Teacher</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h3>Teacher List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="teacherBody"></tbody>
+        </table>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

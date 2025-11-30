@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="id.css">
+</head>
+<body>
+    <div class="dashboard">
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Admin</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="manage-students.html">Manage Students</a></li>
+                <li><a href="manage-teachers.html">Manage Teachers</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="messaging.html">Messaging</a></li>
+                <li><a href="index.html" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Welcome, Admin</Mr>!</h1>
+                <p>Use the navigation on the left to manage ERP modules efficiently.</p>
+            </header>
+            <section class="cards">
+                <div class="card">
+                    <h3>Students</h3>
+                    <p>View and manage all student records.</p>
+                </div>
+                <div class="card">
+                    <h3>Teachers</h3>
+                    <p>Manage teacher profiles and schedules.</p>
+                </div>
+                <div class="card">
+                    <h3>Timetable</h3>
+                    <p>Organize classes and resources.</p>
+                </div>
+                <div class="card">
+                    <h3>Messaging</h3>
+                    <p>Communicate with students and teachers.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

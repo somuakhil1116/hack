@@ -1,0 +1,198 @@
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', 'Patrick Hand', cursive;
+}
+
+body {
+    background: linear-gradient(135deg, #ffe4ec, #fff0f5);
+    color: #4b2e4f;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+    background: #ff7eb9;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+nav h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Patrick Hand', cursive;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Container */
+.container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Card Style */
+.card {
+    background: #fff0f5;
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #d63384;
+    font-family: 'Bazooka', 'Patrick Hand', cursive;
+}
+
+/* Form Inputs */
+form input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 12px;
+    width: 300px;
+    border: 2px solid #ffb6c1;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    border-color: #ff69b4;
+    box-shadow: 0 0 8px rgba(255,105,180,0.5);
+    outline: none;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #ff69b4, #ff1493);
+    border: none;
+    color: white;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    font-family: 'Patrick Hand', cursive;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+thead {
+    background: linear-gradient(90deg, #ff69b4, #ff1493);
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffe4ec;
+}
+
+tbody tr:hover {
+    background-color: #ffcce6;
+}
+
+/* Action Buttons in Table */
+.table-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #ffb347;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #ffa500;
+}
+
+.delete-btn {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #e60039;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    .container {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+    }
+}

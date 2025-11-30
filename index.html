@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>ERP Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>ERP System</h2>
+    <ul>
+        <li><a href="index.html">Login</a></li>
+    </ul>
+</nav>
+
+<section class="container">
+    <h2>Login</h2>
+
+    <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <select id="loginRole" required>
+            <option value="">Select Role</option>
+            <option value="admin">Admin</option>
+            <option value="teacher">Teacher</option>
+            <option value="student">Student</option>
+        </select>
+        <button type="submit">Login</button>
+    </form>
+
+    <p id="loginMsg"></p>
+
+    <h3>Don't have an account?</h3>
+    <a class="btn" href="#" onclick="showRegister()">Register</a>
+
+    <div id="registerBox" class="hidden">
+        <h2>Create Account</h2>
+        <form id="regForm">
+            <input type="text" id="regName" placeholder="Name" required>
+            <input type="email" id="regEmail" placeholder="Email" required>
+            <input type="password" id="regPassword" placeholder="Password" required>
+            <select id="regRole" required>
+                <option value="">Select Role</option>
+                <option value="admin">Admin</option>
+                <option value="teacher">Teacher</option>
+                <option value="student">Student</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+        <p id="regMsg"></p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
